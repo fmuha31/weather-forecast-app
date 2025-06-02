@@ -3,7 +3,7 @@ async function getWeather() {
     const res = await fetch('/getWeather', {
         method: "POST",
         headers: {'Content-Type': '/application/json'},
-        body: JSON.stringify({zip}),
+        body: JSON.stringify({zipcode}),
     })
 
     const data = await res.json();
